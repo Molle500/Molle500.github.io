@@ -23,7 +23,7 @@ function requestData () {
 
 function showInformation (response) {
   response = JSON.parse(response)
-  xcmValue.textContent = response.latestPrices[0].price + '€'
+  xcmValue.textContent = response.latestPrices[0].price.toFixed(4) + '€'
 
   console.log(response)
 }
